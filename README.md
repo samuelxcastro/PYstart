@@ -1,6 +1,6 @@
 <h1>BEM VINDO AO PYstart!</h1>
 
-# DICAS E REGRAS - PYstart:
+<h2> DICAS E REGRAS - PYstart:</h2>
 
 <ul>
   <li> Cada usuário poderá postar até 1 jogo por vez.</li>
@@ -10,6 +10,8 @@
   <li> Faça de uma maneira como se estivesse ensinando um iniciante em PYTHON </li>
 </ul>
 
+<h2>OBJETIVO:</h2>
+<p>Ajudar a quem está iniciando em python de uma maneira divertida</p>
 
 ## Authors
 

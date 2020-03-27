@@ -10,8 +10,6 @@
   <li> Faça de uma maneira como se estivesse ensinando um iniciante em PYTHON </li>
 </ul>
 
-Autores que ajudaram na decisão do nome do projeto - PYstart:
-
 
 ## Authors
 

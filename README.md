@@ -18,3 +18,5 @@
 * **Samuel Castro** - *Initial work* - [Perfil GitHub](https://github.com/samuelxcastro)
 
 * **Daniel Melonio** - *Helped in the name of the project - PYstart* - [Perfil GitHub](https://github.com/danielcmelonio)
+
+* **Wesley Benício** - *Helped in the name of the project - PYstart* - [Perfil GitHub](https://github.com/wesbdss)

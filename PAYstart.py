@@ -1,5 +1,5 @@
 
-from random import randint
+from random import randint,random
 from time import sleep
 import emoji
 
@@ -12,13 +12,16 @@ if brincar == 'S':
     [ 1 ] ESCONDE-ESCONDE
     [ 2 ] TENTE ADVINHAR
     [ 3 ] JOKENPÔ
+    [ 4 ] JOGO DA FORCA
     '''))
 
     # =============== BRINCADEIRA 01 ===============
     if brincadeira == 1:
-        esconderijos = ['Atrás da Arvore', 'No mato do Lote vago', 'Embaixo do carro', 'No Beco escuro']
+        esconderijos = ['Atrás da Arvore', 'No mato do Lote vago',
+                        'Embaixo do carro', 'No Beco escuro']
         computador = randint(0, len(esconderijos) - 1)
-        print(emoji.emojize('Ok! Você escolheu ESCONDE-ESCONDE. :grinning:', use_aliases=True))
+        print(emoji.emojize(
+            'Ok! Você escolheu ESCONDE-ESCONDE. :grinning:', use_aliases=True))
         sleep(2)
         print('3s é o suficiente para eu me esconder, conte até 3 e tente me achar. NÃO VALE OLHAR PRA TRÁS!')
         sleep(2)
@@ -43,9 +46,11 @@ if brincar == 'S':
                             '''))-1
 
             if onde == computador:
-                print('Parabéns; você me achou {}'.format(esconderijos[computador]))
+                print('Parabéns; você me achou {}'.format(
+                    esconderijos[computador]))
             else:
-                print('Ops! eu estava escondido {}. Tente outra vez!'.format(esconderijos[computador]))
+                print('Ops! eu estava escondido {}. Tente outra vez!'.format(
+                    esconderijos[computador]))
 
         elif preparado == 'N':
             print('Tudo bem! Quando estiver preparado, basta dar play no jogo novamente.')
@@ -55,24 +60,25 @@ if brincar == 'S':
     # =============== BRINCADEIRA 02 ===============
 
     elif brincadeira == 2:
-        computador = randint(0,5)
+        computador = randint(0, 5)
         print(computador)
-        print(emoji.emojize('Ok! Você escolheu TENTE ADIVINHAR. :grinning:', use_aliases=True))
+        print(emoji.emojize(
+            'Ok! Você escolheu TENTE ADIVINHAR. :grinning:', use_aliases=True))
         onde = int(input('De 0 a 5, tente adivinhar em qual número eu pensei: '))
 
         if onde == computador:
             print('Acertou miseravi!')
 
         elif onde > 5:
-            print('\033[31mOPÇÃO INVÁLIDA!\033[m \n Tente um número de 5 pra baixo.')
+            print(
+                '\033[31mOPÇÃO INVÁLIDA!\033[m \n Tente um número de 5 pra baixo.')
         else:
             print('Ops! Você errou, eu pensei no número {}'.format(computador))
-
 
     # =============== BRINCADEIRA 03 ===============
     elif brincadeira == 3:
         itens = ['Pedra', 'Papel', 'Tesoura']
-        computador = randint(0,2)
+        computador = randint(0, 2)
         print(emoji.emojize('Ok! Você escolheu JOKENPÔ. :grinning:', use_aliases=True))
         print(''' Você quer:
         [ 0 ] PEDRA
@@ -118,6 +124,63 @@ if brincar == 'S':
                 print('EMPATOU!')
             else:
                 print('JOGADA INVÁLIDA!')
+    # =============== BRINCADEIRA 04 ===============
+    elif brincadeira == 4:
+        # forca
+        with open("listadeanimais.txt","r",encoding="UTF-8") as f: #Adicionar mais palavras no arquivo
+            palavras = f.readlines()
+            f.close()
+        palavras = [x.rstrip('\n').lower() for x in palavras]
+        plv = palavras[int(random()*len(palavras))]
+        plv = plv.strip()
+        dica = "Animal"
+        game = 1
+        vidas = 5
+        restantes = []
+        for x in plv:
+            if x != '-' or x != ' ':
+                restantes.append("__")
+            else:
+                restantes.append(x)
+
+        teclas = []
+        print("Forca selecionada\n")
+        print("!!! LEMBRETE !!!\n Letras com acento estão valendo\n!!! LEMBRETE !!!\n")
+        print("\nDica: {}".format(dica))
+        print("Vidas restantes: {}".format(vidas))
+        while game:
+            print("Teclas digitadas {}\n".format(teclas))
+            if "".join(restantes) == plv:
+                print("\n==========================================")
+                print("=============Você GANHOU !! ==============")
+                print("==========================================\n")
+                break
+
+            if vidas <= 0:
+                print("\n!!!!Game Over!!!!\n")
+                print("A palavra era '{}'\n".format("".join(plv)))
+                break
+            print("\t{}".format(restantes))
+            tecla = str(input("\nDigite uma tecla >> ")).lower()
+            if tecla in teclas:
+                print("tecla repetida")
+                continue
+            if tecla in plv:
+                teclas.append(tecla)
+                for x in range(0,len(plv)):
+                    if tecla == plv[x]:
+                        restantes[x] = tecla
+            else:
+                teclas.append(tecla)
+                print("Letra Errada :(")
+                vidas = vidas - 1
+                print("----> Vidas restantes: {} <----\n".format(vidas))
+
+
+
+    
 
 else:
-    print(emoji.emojize('Tudo bem! Outra hora nós jogamos. :expressionless:', use_aliases=True))
+    print(emoji.emojize(
+        'Tudo bem! Outra hora nós jogamos. :expressionless:', use_aliases=True))
+

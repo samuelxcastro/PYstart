@@ -113,7 +113,7 @@ if brincar == 'S':
             elif jogador == 2:
                 print('VOCÊ GANHOU! PAPEL PERDE PARA TESOURA.')
             else:
-                print('JOGADA INVÁLIDA!')
+                print('JOGADA INVÁLIDAAAAA!')
 
         elif computador == 2:
             if jogador == 0:

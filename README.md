@@ -8,6 +8,8 @@
   <li> Os jogos devem ser codificados em PYTHON</li>
   <li> Todo e qualquer código deve ser bem documentado</li>
   <li> Faça de uma maneira como se estivesse ensinando um iniciante em PYTHON </li>
+  <li> <b>O SEU CÓDIGO DEVE IR DENTRO DO ARQUIVO PYstart exemplo:<b> Se você abrir o arquivo e ver la dentro 4 jogos, o seu código dever ser o próximo ou seja... (o 5º). Então resumindo: Você pode ter arquivos externos porém o código principal com as chamadas deve ir dentro do PYstart.</li>
+   <li> Abra o arquivo PYstart, cada jogo ali dentro (cada opção que ele oferece, exemplo: JOKENPÔ, JOGO DA MEMÓRIA ETC..) é um jogo de um desenvolvedor.<li>
 </ul>
 
 <h2>OBJETIVO:</h2>

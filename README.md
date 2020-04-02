@@ -5,11 +5,8 @@
 <ul>
   <li>O CÓDIGO DEVERÁ SER CAPAZ DE RODAR NO TERMINAL</li>
   <li> OS JOGOS DEVERÃO SER PROGRAMADOS EM PYTHON</li>
-  <li> <b>O SEU CÓDIGO DEVE IR DENTRO DO ARQUIVO PYstart exemplo:<b> Se você abrir o arquivo e ver la dentro 4 jogos, o seu código dever ser o próximo ou seja... (o 5º). Então resumindo: Você pode ter arquivos externos porém o código principal com as chamadas deve ir dentro do PYstart.</li>
   <li> Todo e qualquer código deve ser bem documentado</li>
   <li> Faça de uma maneira como se estivesse ensinando um iniciante em PYTHON </li>
-  <li> Cada usuário poderá postar até 1 jogo por vez.</li>
-  <li> Não pode repetir o jogo do colega na opção de escolher os jogos.</li>
 
 <h2>OBJETIVO:</h2>
 <p>Ajudar a quem está iniciando em python de uma maneira divertida</p>

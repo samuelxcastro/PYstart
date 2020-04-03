@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a3ec9b7d-b6ca-4f5a-92b1-b650633d351d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZzfrpoPQAC70BrqJ0QNTAK0g6n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CURSO_EM_VIDEO/CURSO_PYTHON" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3ec9b7d-b6ca-4f5a-92b1-b650633d351d" name="Default Changelist" comment="" />
+      <created>1585847045216</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585847045216</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="772" y="95" key="#Notifications" timestamp="1585847069146">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="772" y="95" key="#Notifications/0.0.2560.1040@0.0.2560.1040" timestamp="1585847069146" />
+    <state x="1001" y="218" key="FileChooserDialogImpl" timestamp="1585847116335">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1001" y="218" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1585847116335" />
+    <state x="809" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1585847056643">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="809" y="302" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585847056643" />
+  </component>
+</project>
